@@ -1,7 +1,7 @@
 #!/bin/sh
 
 execute_file() {
-	echo "Srat the process!"
+	echo "Start the process!"
 	java -jar handshaker.jar
 }
 
@@ -13,7 +13,7 @@ then
 	then
 	    execute_file
 	else
-	    curl https://github.com/nadeengamage/handshaker/blob/master/build/handshaker.jar -o handshaker.jar
+	    curl https://raw.githubusercontent.com/nadeengamage/handshaker/master/build/handshaker.jar -o handshaker.jar
 	    execute_file
 	fi
 fi

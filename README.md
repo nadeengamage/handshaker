@@ -13,7 +13,7 @@ Step-1: The tool relies on Java, so make sure you have installed the Java and ru
 Step-2: Copy handshaker.sh to a directory where you want to maintain Identity Server git repositories. Alway better to keep this readonly.
 
 ```markdown
-$ wget https://github.com/nadeengamage/handshaker/raw/master/handshaker.sh
+$ curl https://raw.githubusercontent.com/nadeengamage/handshaker/master/handshaker.sh -o handshaker.sh
 $ chmod +x handshaker.sh
 ```
 
