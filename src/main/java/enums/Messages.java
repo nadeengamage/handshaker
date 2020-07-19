@@ -19,7 +19,7 @@ package enums;
 
 public enum Messages {
 
-    ENTER_CERTIFICATE("1. Enter your certificate file path (.cer) : "),
+    ENTER_CERTIFICATE("1. Enter your certificate file path (.cer | .crt | .pem) : "),
     ENTER_DOMAIN_NAME("2. Enter your URL : "),
     ENTER_VALID_PATH("Please enter valid certificate file path!"),
     ENTER_VALID_DOMAIN_NAME("Please enter valid URL name!");
