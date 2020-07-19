@@ -90,7 +90,7 @@ public class Reader {
 
     private boolean fileValidator(File file) {
         String fileName = file.getName();
-        return fileName.endsWith(".cer");
+        return fileName.endsWith(".cer") || fileName.endsWith(".crt") || fileName.endsWith(".pem");
     }
 
     private boolean domainValidator(String domainName) {

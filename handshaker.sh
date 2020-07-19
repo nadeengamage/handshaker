@@ -8,6 +8,7 @@ execute_file() {
 if nc -zw1 github.com 443 && echo |openssl s_client -connect github.com:443 2>&1 |awk '
   handshake && $1 == "Verification" { if ($2=="OK") exit; exit 1 }
   $1 $2 == "SSLhandshake" { handshake = 1 }'
+  echo "No internet connection!"
 then
 	if [ -e handshaker.jar ]
 	then
